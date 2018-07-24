@@ -1,0 +1,52 @@
+@import './../../global.scss';
+
+
+.info_space{
+    background-color:rgb(245, 245, 245);
+    height: 500px;
+    width: 100vw;
+    max-width: 100%;
+    text-align: center;
+
+    .info{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        h1, p, a, {
+            margin: 10px;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        a{
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 15px 30px 15px 30px;
+            background-color: white;
+            border-radius: 4px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(57, 69, 176);
+            color: rgb(57, 69, 176);
+
+            &:hover{
+                border-color: rgb(28, 41, 157);
+                color: rgb(28,41, 157);
+            }
+
+            &:link{
+                text-decoration: none;
+            }
+        }
+    }
+    .company_grid{
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80vw;
+        grid-gap: 40px;
+
+        img{
+            justify-self: center;
+        }
+
+    }
+}

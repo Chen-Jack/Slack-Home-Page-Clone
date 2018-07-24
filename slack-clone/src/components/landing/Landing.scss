@@ -1,12 +1,17 @@
 @import './../../global.scss';
 
 .landing{
-    padding-top: 100px;
-    height: calc(100vh - 70px); //The navbar is around 70px
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: calc(100vh - 70px); //The navbar is around 70px
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width:100%;
+
+    border-bottom-style: solid;
+    border-bottom-color: rgb(235, 235, 235);
+    border-bottom-width: 1px;
     
 
     .img{
