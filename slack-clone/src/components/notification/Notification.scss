@@ -1,2 +1,74 @@
 @import './../../global.scss';
 
+.notification{
+    background-color: rgb(26, 25, 56);
+    width: 100vw;
+    height: 100px;
+    display: flex;
+
+    &.isClosed{
+        display: none;
+    }
+
+
+    .notification_content{
+        flex: 3;
+        width: 80%;
+        height: 100%;
+        display: inline-flex;
+        justify-content: flex-end;
+        
+
+        .logo{
+            width: 30px;
+            height: 30px;
+            align-self: center;
+        }
+
+        .text{
+            display: inline-block;
+            color: #fff;
+            align-self: center;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+        .register_button{
+            font-size: 12pt;
+            align-self: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: rgb(67, 79, 186);
+            color: #fff;
+
+            &:hover{
+                background-color: rgb(28, 41, 157);
+            }
+        }
+    }
+
+    .close_button{
+        flex: 1;
+        align-self: center;
+        width: 30px;
+        height: 30px;
+        font-size: 1.5em;
+        color: #fff;
+        background-color: transparent;
+        border:none;
+        text-align: end;
+        padding-right: 30px;
+
+        &:hover{
+            color: goldenrod;
+        }
+    }
+
+
+
+}
+
