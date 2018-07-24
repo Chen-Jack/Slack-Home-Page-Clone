@@ -1,0 +1,59 @@
+@import './../../global.scss';
+
+.navbar{
+    width: 100vw;
+    height: 70px;
+    background-color: #fff;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-color: rgb(235, 235, 235);
+
+    text-align: center;
+
+}
+
+.navbar_content{
+    display: inline-flex;
+    width: 90%;
+    height: 100%;
+}
+
+
+.logo{
+    width: 125px;
+    height: 60px;  
+    align-self: center;
+    flex: 1;
+}
+
+
+.navbar_list{
+    flex: 6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: Slack-Averta, appleLogo, sans-serif;
+}
+
+.navbar_link{
+    font-size: 16px;
+    text-decoration: none;
+    padding: 20px;
+    color:rgb(50, 54, 72);
+    
+    &:hover{
+        color: rgb(63, 70, 173);
+    }
+
+}
+
+.navbar_button{
+    font-size: 1em;
+    width:146px;
+    height:36px;
+    border-radius: 4px;
+    border-color: black;
+    background-color: #fff;
+    border-width: 1px;
+    color:rgb(50, 54, 72);
+}
