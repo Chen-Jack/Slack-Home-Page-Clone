@@ -4,6 +4,7 @@
     background-color: rgb(26, 25, 56);
     width: 100vw;
     height: 100px;
+    max-width:100%;
     display: flex;
 
     &.isClosed{
@@ -54,22 +55,33 @@
         }
     }
 
-    .close_button{
+    .close_button_space{
         flex: 1;
         align-self: center;
-        width: 30px;
-        height: 30px;
-        font-size: 1.5em;
-        color: #fff;
-        background-color: transparent;
-        border:none;
         text-align: end;
-        padding-right: 30px;
 
-        &:hover{
-            color: goldenrod;
+        .close_button{
+            color: #fff;
+            background-color: transparent;
+            border:none;
+
+            margin-right: 50px;
+
+            img{
+                width: 30px;
+                height: 30px;
+                transition: filter 250ms;
+                filter: saturate(0%) brightness(100%);
+            }
+
+            &:hover img{
+                filter: none;
+            }
+
         }
     }
+
+ 
 
 
 

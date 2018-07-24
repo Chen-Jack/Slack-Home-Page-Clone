@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import style from './Notification.scss';
 import logo from './frontiers-logo.png';
-import close_button from './x.png';
+import close_button from './x_hover.png';
 
 class Notification extends Component{
     constructor(props) {
@@ -30,9 +30,11 @@ class Notification extends Component{
             </div>
 
             
-            <button className={style.close_button} onClick={this.closeNotification}>
-                 x
-            </button>  
+            <div className={style.close_button_space}>
+                <button className={style.close_button} onClick={this.closeNotification}>
+                    <img src={close_button} alt="x"/>
+                </button>  
+            </div>
    
 
         </div>

@@ -11,12 +11,12 @@ class NavBar extends Component{
     render(){
         return <nav className={style.navbar}>
             <div className={style.navbar_content}>
-                <img className={style.logo} src={SlackLogo} alt="slack logo" />
+                <a href = "https://slack.com" className={style.logo}><img src={SlackLogo} alt="slack logo" /></a>
                 <div className={style.navbar_list}>
                     <a href="" className={style.navbar_link}> Why Slack? </a> 
                     <a href="" className={style.navbar_link}> Pricing </a>
                     <a href="" className={style.navbar_link}> About Us </a> 
-                    <button className={style.navbar_button}> Your Workspaces </button>
+                    <a href="" className={style.workspace}> Your Workspaces </a>
                 </div>
             </div>
         </nav>
