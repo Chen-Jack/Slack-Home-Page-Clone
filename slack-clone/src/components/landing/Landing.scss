@@ -1,0 +1,55 @@
+@import './../../global.scss';
+
+.landing{
+    padding-top: 100px;
+    height: calc(100vh - 70px); //The navbar is around 70px
+    width: 100vw;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 50px;
+
+
+
+    .body{
+        padding-left: 50px;
+        padding-right: 50px;
+
+        h1{
+            font-family: "Times New Roman", Georgia, serif;
+            margin-bottom: 30px;
+            font-size: 5em;
+            color:rgb(50, 54, 72);
+        }
+        p{
+            font-family: "Times New Roman", Georgia, serif;
+            margin-bottom: 30px;
+            font-size: 1.3em;
+            color:rgb(50, 54, 72);
+        }
+        .register{
+            display: inline-flex;
+            width: 140px;
+            height: 20px;
+            padding: 15px 20px 15px 20px;
+            background-color: rgb(28, 41, 157);
+            border-radius: 4px;
+            color: white;
+            justify-content: center;
+
+            span{
+                align-self: center;
+            }
+
+            &:link{
+                text-decoration: none;
+            }
+         
+        }
+
+        h6{
+            margin-top: 20px;
+            color:rgb(50, 54, 72);
+        }
+    }
+
+}
