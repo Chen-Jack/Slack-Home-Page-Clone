@@ -1,0 +1,29 @@
+@import './../../../global.scss';
+
+li{
+    list-style-type: none;
+}
+
+.directory{
+    display: inline-flex;
+    justify-content: center;
+    flex:3;
+    .column{
+        width: max-content;
+        padding: 30px;
+
+        .column_title{
+            color:rgb(50, 54, 72);    
+        }
+
+        li a{
+            text-decoration: none;
+            color: rgb(91, 94, 109);
+
+            &:visited{
+                color: rgb(91, 94, 109);
+            }
+        }
+    }
+}
+

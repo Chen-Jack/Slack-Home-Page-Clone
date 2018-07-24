@@ -1,0 +1,26 @@
+@import './../../global.scss';
+
+
+.footer{
+    width: 100vw;
+    max-width: 100%;
+    text-align: center;
+
+    .content{
+        width: 90%;
+        padding: 30px;
+        display: inline-flex;
+
+        .logo{
+            flex: 1;
+            text-align: start;
+
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+    }
+}
+

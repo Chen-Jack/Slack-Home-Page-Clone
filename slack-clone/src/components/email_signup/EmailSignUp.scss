@@ -31,6 +31,7 @@
             width: 308px;
             border-radius: 4px;
             border-style: none;
+            padding-left: 20px;
         }
 
         button{
@@ -39,16 +40,18 @@
             height: 56px;
             padding-left: 30px;
             padding-right: 30px;
-            border: none;
+            border-style: solid;
+            border-width: 1px;
             border-radius: 4px;
             color: rgb(63, 70, 173);
             background-color: #fff;
-            box-sizing: border-box;
 
-            transition: background-color 250ms;
+            transition: all 250ms;
 
             &:hover{
                 color: rgb(28, 41, 157);
+                border-color: rgb(28, 41, 157);
+                border-width: 2px;
             }
         }
     }
