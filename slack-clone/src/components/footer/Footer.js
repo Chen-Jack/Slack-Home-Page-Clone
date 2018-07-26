@@ -9,13 +9,14 @@ class Footer extends Component{
     render(){
         return <div className={style.footer}>
             <div className={style.content}>
-                <div className={style.logo}>
+                <span className={style.logo}>
                     <img src={slack_logo} alt="slack logo"/>
-                </div>
-                <Directory/>  
+                </span>
+
+                <Directory className={style.dic}/>  
             </div>
 
-             <Extensions/>
+             {/* <Extensions/> */}
         </div>
     }
 }

@@ -5,14 +5,24 @@ li{
 }
 
 .directory{
-    display: inline-flex;
-    justify-content: center;
+    display: inline-grid;
+    justify-content: flex-end;
+    max-width: max-content;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    //For medium and small sized screens
+    @media(max-width: 750px){
+        grid-template-columns: 1fr 1fr;
+    }
+
     .column{
-        width: max-content;
-        padding: 30px;
+        display: inline-block;
+        margin: 20px;
+        padding: 5px;
+        box-sizing: border-box;
 
         .column_title{
-            color:rgb(50, 54, 72);    
+            color:$text-dark;    
         }
 
         li{
@@ -20,11 +30,11 @@ li{
 
             a{
                 text-decoration: none;
-                color: rgb(91, 94, 109);
+                color:$text-light;
                 transition: color 250ms;
 
                 &:visited{
-                    color: rgb(91, 94, 109);
+                    color: $text-light;
                 }
 
                 &:hover{

@@ -11,7 +11,7 @@ class NavBar extends Component{
     render(){
         return <nav className={style.navbar}>
             <div className={style.navbar_content}>
-                <a href = "https://slack.com" className={style.logo}><img src={SlackLogo} alt="slack logo" /></a>
+                <a href = "https://slack.com" className={style.home}><img src={SlackLogo} className={style.logo} alt="" /></a>
                 <div className={style.navbar_list}>
                     <a href="" className={style.navbar_link}> Why Slack? </a> 
                     <a href="" className={style.navbar_link}> Pricing </a>

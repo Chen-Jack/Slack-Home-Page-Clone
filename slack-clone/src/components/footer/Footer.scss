@@ -4,21 +4,26 @@
 .footer{
     width: 100vw;
     max-width: 100%;
-    text-align: center;
     background-color: white;
+
 
     .content{
         width: 90%;
         padding: 20px;
-        display: inline-flex;
+        display:flex;
 
-        .logo{
-            flex: 1;
-            text-align: start;
+        @media(max-width:751px){
+            display: block;
+        }
+     
 
+        .logo{        
+                width: 50%;
+                margin: 25px;
             img{
-                width: 100px;
-                height: 100px;
+
+                width:100px;
+                height:100px;
             }
         }
 

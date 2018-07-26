@@ -19,12 +19,15 @@
     width: 90%;
     height: 100%;
 
-    .logo{
-        width: 125px;
-        height: 60px;  
+    .home{
+        
         align-self: center;
-        flex: 1;
         display: inline-flex;
+    
+        .logo{
+            width: 125px;
+            height: 60px; 
+        }
     }
 
     .navbar_list{

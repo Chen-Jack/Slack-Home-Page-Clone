@@ -6,13 +6,25 @@
     min-height: calc(100vh - 70px); //The navbar is around 70px
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     max-width:100%;
 
     border-bottom-style: solid;
     border-bottom-color: rgb(235, 235, 235);
     border-bottom-width: 1px;
     
+    grid-template-columns: 1fr 1fr;
+
+    //For medium and small sized screens
+    @media(max-width:750px){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        .img{
+            grid-row: 2;
+        }
+        .body{
+            grid-row: 1;
+        }
+    }
 
     .img{
         width: 100%;
@@ -36,23 +48,51 @@
             font-size: 1.3em;
             color:rgb(91, 94, 109);
         }
+        input{
+            margin: 10px;
+            display: inline-block;
+            height: 56px;
+            border-radius: 4px;
+            border-style: solid;
+            color: $text-light;
+            border-width: 1px;
+            border-color: $text-light;
+            font-size: 10pt;
+            padding-left: 20px; //To better align the text inside the input
+            box-sizing: border-box;
+
+            max-width: 308px;
+            min-width: 270px;
+
+            //For medium and small sized screens
+            @media (max-width:750px){
+                max-width: 80%;
+                min-width: 80%;
+            }
+        }
+
         .register{
             display: inline-flex;
-            width: 140px;
-            height: 20px;
-            padding: 15px 20px 15px 20px;
-            background-color: rgb(57, 69, 176);
+            min-width: 140px;
+            height: 56px;
+            margin: 10px;
+            background-color: $main-light;
             border-radius: 4px;
+            border-style: none;
             color: white;
             justify-content: center;
             transition: background-color 250ms;
+            box-sizing: border-box;
 
-            span{
-                align-self: center;
+            //For medium and small sized screens
+            @media (max-width:750px){
+                max-width: 80%;
+                min-width: 80%;
             }
 
+
             &:hover{
-                background-color: rgb(28, 41, 157);
+                background-color:$main-dark;
             }
 
             &:link{
