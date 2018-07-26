@@ -1,0 +1,28 @@
+@import '../../../global.scss';
+
+.extensions{
+    width: 100vw;
+    max-width: 100%;
+    height: 84px;
+    background-color: rgb(245, 245, 245);
+    
+    .info{
+        float: left;
+        padding: 30px;
+
+        a{
+            margin: 10px;
+            color: rgb(50, 54, 72);
+        }
+    }
+
+
+
+    .social_media{
+        float:right;
+        padding: 30px;
+        a{
+            margin:10px;
+        }
+    }
+}

@@ -23,16 +23,21 @@ class Notification extends Component{
 
     render(){
         return <div className={ style.notification + ' ' + (this.state.isClosed? style.isClosed : '')}>
+            
             <div className={style.notification_content}>
                 <img className={style.logo} src={logo} alt="logo"/>
-                <p className={style.text}>  Join us at Frontiers, a conference by Slack, in SF & NYC </p>
-                <button className={style.register_button}> <strong> Register Now  </strong></button> 
+                <p className={style.text}>  
+                    Join us at Frontiers, a conference by Slack, in SF & NYC &nbsp;  
+                    <a href="" className={style.register}> <strong> Register Now  </strong></a>
+                </p>
+                
+                
             </div>
 
             
             <div className={style.close_button_space}>
                 <button className={style.close_button} onClick={this.closeNotification}>
-                    <img src={close_button} alt="x"/>
+                    <img src={close_button} alt=""/>
                 </button>  
             </div>
    

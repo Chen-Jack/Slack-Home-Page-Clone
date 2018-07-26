@@ -7,7 +7,6 @@ li{
 .directory{
     display: inline-flex;
     justify-content: center;
-    flex:3;
     .column{
         width: max-content;
         padding: 30px;
@@ -16,12 +15,21 @@ li{
             color:rgb(50, 54, 72);    
         }
 
-        li a{
-            text-decoration: none;
-            color: rgb(91, 94, 109);
+        li{
+            padding: 5px;
 
-            &:visited{
+            a{
+                text-decoration: none;
                 color: rgb(91, 94, 109);
+                transition: color 250ms;
+
+                &:visited{
+                    color: rgb(91, 94, 109);
+                }
+
+                &:hover{
+                    color: rgb(57, 69, 176);
+                }
             }
         }
     }

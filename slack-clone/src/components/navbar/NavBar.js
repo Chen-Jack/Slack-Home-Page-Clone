@@ -16,7 +16,7 @@ class NavBar extends Component{
                     <a href="" className={style.navbar_link}> Why Slack? </a> 
                     <a href="" className={style.navbar_link}> Pricing </a>
                     <a href="" className={style.navbar_link}> About Us </a> 
-                    <a href="" className={style.workspace}> Your Workspaces </a>
+                    <a href="" className={style.workspace}> Create Workspace </a>
                 </div>
             </div>
         </nav>
