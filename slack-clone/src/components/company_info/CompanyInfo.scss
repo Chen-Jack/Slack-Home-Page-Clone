@@ -3,7 +3,7 @@
 
 .info_space{
     background-color:rgb(245, 245, 245);
-    height: 500px;
+    min-height: 500px;
     width: 100vw;
     max-width: 100%;
     text-align: center;
@@ -40,11 +40,25 @@
     }
     .company_grid{
         display: inline-grid;
-        grid-template-columns: 1fr 1fr 1fr;
         width: 80vw;
+        margin: 20px;
+
+        //Large Size Screen
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 40px;
 
+        //Medium Size screen
+        @media (max-width:950px) and (min-width:751px){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        //Small size Screen
+        @media(max-width:750px){
+            grid-template-columns: 1fr;
+        }
+
         img{
+            max-width:100%;
             justify-self: center;
         }
 
