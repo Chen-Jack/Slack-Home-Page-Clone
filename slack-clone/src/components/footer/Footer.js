@@ -16,7 +16,7 @@ class Footer extends Component{
                 <Directory className={style.dic}/>  
             </div>
 
-             {/* <Extensions/> */}
+             <Extensions/>
         </div>
     }
 }

@@ -1,0 +1,96 @@
+@import './../../../global.scss';
+
+$drawer-speed: 300ms;
+$opacity-speed: 300ms;
+
+.drawer_toggle{
+    position: relative;
+    background-color: transparent;
+    border-style: none;
+    
+    >img{
+        width: 30px;
+        height: 30px;
+    }
+
+    &.isExpanded + .drawer_body{
+        display: inline-block;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
+.drawer_body{    
+    //As long as its on the top.
+    z-index: 100;
+    padding:0;
+    margin:0;
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    transition: left $drawer-speed, opacity $opacity-speed;
+    height: 100vh;
+    opacity: 0;
+    background-color: $main-dark;
+    background-image: url(./bg.png);
+    overflow: hidden;
+
+    .upperPanel{
+        height: 70px;
+        width: 100vw;
+        max-width: 100%;
+        border-bottom: 1px solid $text-light;
+        border-width: 1px;
+        
+        .logo_space{
+            float: left;
+            margin-left: 20px;
+            height: 100%;
+            
+            //Vertically center img
+            display: flex;
+            align-content: center;
+            >img{
+                height:60px;
+                width: 60px;
+            }
+        }   
+
+        .close_drawer{
+            float: right;
+            margin-right: 30px;
+            background-color: transparent;
+            border-style: none;
+            height: 100%;
+
+            //Vertically center img
+            display: flex;
+            align-content: center;
+
+            >img{
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        &::after{
+            content : "";
+            clear: both;
+        }
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+        
+        >a{
+            font-size: 1.5em;
+            color: white;
+        }
+    }
+}
+
+

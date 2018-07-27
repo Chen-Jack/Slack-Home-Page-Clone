@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import style from './Extensions.scss';
 
 const Extensions = function(props){
