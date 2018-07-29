@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import style from './Footer.scss';
-import slack_logo from './slack_logo.png';
 import Directory from './directory/Directory';
 import Extensions from './Extensions/Extensions';
+import slack_logo from './slack_logo.png';
 
 
 class Footer extends Component{
     render(){
         return <div className={style.footer}>
+           {/* Footer Content */}
             <div className={style.content}>
                 <span className={style.logo}>
                     <img src={slack_logo} alt="slack logo"/>
@@ -16,7 +17,8 @@ class Footer extends Component{
                 <Directory className={style.dic}/>  
             </div>
 
-             <Extensions/>
+            {/* Social Media Extensions */}
+            <Extensions/>
         </div>
     }
 }

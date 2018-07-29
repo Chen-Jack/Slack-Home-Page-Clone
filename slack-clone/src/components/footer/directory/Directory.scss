@@ -1,9 +1,5 @@
 @import './../../../global.scss';
 
-li{
-    list-style-type: none;
-}
-
 .directory{
     display: inline-grid;
     justify-content: flex-end;
@@ -14,32 +10,31 @@ li{
     @media(max-width: 750px){
         grid-template-columns: 1fr 1fr;
     }
+}
 
-    .column{
-        display: inline-block;
-        margin: 20px;
+.column{
+    display: inline-block;
+    margin: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+
+    .column_title{
+        color:$text-dark;    
+    }
+
+    > li{
         padding: 5px;
-        box-sizing: border-box;
 
-        .column_title{
-            color:$text-dark;    
-        }
+        > a{
+            color:$text-light;
+            transition: color 250ms;
 
-        li{
-            padding: 5px;
+            &:visited{
+                color: $text-light;
+            }
 
-            a{
-                text-decoration: none;
-                color:$text-light;
-                transition: color 250ms;
-
-                &:visited{
-                    color: $text-light;
-                }
-
-                &:hover{
-                    color: rgb(57, 69, 176);
-                }
+            &:hover{
+                color: $main-dark;
             }
         }
     }

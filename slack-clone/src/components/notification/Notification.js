@@ -22,16 +22,14 @@ class Notification extends Component{
 
 
     render(){
-        return <div className={ style.notification + ' ' + (this.state.isClosed? style.isClosed : '')}>
+        return <div className={ style.notification_space + ' ' + (this.state.isClosed? style.isClosed : '')}>
             
             <div className={style.notification_content}>
                 <img className={style.logo} src={logo} alt="logo"/>
                 <p className={style.text}>  
                     Join us at Frontiers, a conference by Slack, in SF & NYC &nbsp;  
                     <a href="" className={style.register}> <strong> Register Now  </strong></a>
-                </p>
-                
-                
+                </p>            
             </div>
 
             

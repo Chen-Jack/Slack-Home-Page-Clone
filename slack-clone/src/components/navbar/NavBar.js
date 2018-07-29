@@ -18,14 +18,15 @@ class NavBar extends Component{
                 </a>
             </div>
             
-            {/* Either the list xor drawer will be rendered, depending on size */}
+            {/* Either the navbar_list XOR the drawer will be rendered, depending on size */}
             <div className={style.navbar_list}>
                 <a href="" className={style.navbar_link}> Why Slack? </a> 
                 <a href="" className={style.navbar_link}> Pricing </a>
                 <a href="" className={style.navbar_link}> About Us </a> 
                 <a href="" className={style.workspace}> Create Workspace </a>
             </div>
-            <Drawer className={style.drawer}/>
+
+            <Drawer className={style.drawer_btn}/>
         </nav>
     }
 }

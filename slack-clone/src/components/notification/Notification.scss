@@ -5,106 +5,101 @@
 
 $notification-color: #1a1838;
 
-.notification{
-    background-color: $notification-color;
+.notification_space{
+    display: flex;
+
     width: 100vw;
     max-width:100%;
     min-height: 100px;
-    display: flex;
+    
+    background-color: $notification-color;
 
     &.isClosed{
         display: none;
     }
+}
 
-    //The actual div that contains the items inside the notification
-    .notification_content{
-        flex: 1;
-        align-self: center;
+//The actual div that contains the items inside the notification
+.notification_content{
+    flex: 1;
+    align-self: center;
 
-        padding: 20px;
-        
-        display: flex;
-        justify-content: center;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        .logo{
-            width: 30px;
-            height: 30px;
-            align-self: center;
+    .logo{
+        width: 30px;
+        height: 30px;
 
-            @media (max-width: 1140px){
-                display: none;
-            }
+        @media (max-width: 1140px){
+            display: none;
         }
+    }
 
+    .text{
+        display: inline-block;
+        color: $background-light;
+        margin: 10px;
 
-        .text{
+        //Register Now link
+        .register{
             display: inline-block;
+            width: max-content;
+            font-size: 12pt;
+            border: none;
+            
             color: $background-light;
-            align-self: center;
-            margin: 10px;
+            background-color: $notification-color;
+            text-decoration: underline;
+            transition: background-color 250ms;
+            
 
-            //Register Now link
-            .register{
-                display: inline-block;
-                width: max-content;
-                font-size: 12pt;
-                align-self: center;
-                border: none;
-                background-color: $notification-color;
-                color: $background-light;
-                text-decoration: underline;
-                transition: background-color 250ms;
-                
+            //If the screen is bigger than 1000px, use this styling
+            @media (min-width: 1000px){
+                background-color: $main-light;
+                border-radius: 4px;
+                padding: 10px 20px 10px 20px;
+                text-decoration: none;
 
-                //If the screen is bigger than 1000px, use this styling
-                @media (min-width: 1000px){
-                    background-color: $main-light;
-                    border-radius: 4px;
-                    padding: 10px 20px 10px 20px;
-                    text-decoration: none;
-
-                    &:hover{
-                        background-color: $main-dark;
-                    }
+                &:hover{
+                    background-color: $main-dark;
                 }
             }
-
         }
 
     }
 
-    //The space allocated for the button and image
-    .close_button_space{
-        width: 20px;
-        height: 20px;
-        padding: 20px;
-        align-self: center;
+}
 
-        .close_button{
+//The space allocated for the button and image
+.close_button_space{
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    align-self: center;
+
+    .close_button{
+        width: inherit;
+        height: inherit;
+
+        color: $main-light;
+        background-color: transparent;
+        border:none;
+
+        img{
             width: inherit;
             height: inherit;
-
-            color: $main-light;
-            background-color: transparent;
-            border:none;
-
-            img{
-                width: inherit;
-                height: inherit;
-                transition: filter 250ms;
-                filter: saturate(0%) brightness(100%);
-            }
-
-            &:hover img{
-                filter: none;
-            }
-
+            transition: filter 250ms;
+            filter: saturate(0%) brightness(100%);
         }
+
+        &:hover img{
+            filter: none;
+        }
+
     }
-
- 
-
-
-
 }
 

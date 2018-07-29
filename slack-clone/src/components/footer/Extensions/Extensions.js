@@ -8,12 +8,6 @@ const Extensions = function(props){
             <a href=""><strong> Privacy & Terms </strong></a>
             <a href=""><strong> Contact Us </strong></a>
         </div>
-
-        <div className={style.social_media}> 
-            <a href=""> Status </a>
-            <a href=""> Privacy & Terms </a>
-            <a href=""> Contact Us </a>            
-        </div>
     </div>
 }
 

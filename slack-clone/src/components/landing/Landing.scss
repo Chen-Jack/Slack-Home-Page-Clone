@@ -1,23 +1,24 @@
 @import './../../global.scss';
 
 .landing{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    display: grid;
     min-height: calc(100vh - 70px); //The navbar is around 70px
     width: 100vw;
-    display: grid;
     max-width:100%;
 
-    border-bottom-style: solid;
-    border-bottom-color: rgb(235, 235, 235);
-    border-bottom-width: 1px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    border-bottom: 1px solid rgb(235, 235, 235);
     
     grid-template-columns: 1fr 1fr;
 
     //For medium and small sized screens
     @media(max-width:750px){
+
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+
         .img{
             grid-row: 2;
         }
@@ -30,39 +31,40 @@
         width: 100%;
     }
 
-
     .body{
         padding-left: 50px;
         padding-right: 50px;
         box-sizing: border-box;
 
-        h1{
+        > h1{
             font-family: "Times New Roman", Georgia, serif;
             margin-bottom: 30px;
             font-size: 5em;
             color:rgb(50, 54, 72);
         }
-        p{
+
+        > p{
             font-family: "Times New Roman", Georgia, serif;
             margin-bottom: 30px;
             font-size: 1.3em;
-            color:rgb(91, 94, 109);
+            color: $text-light;
         }
-        input{
-            margin: 10px;
+
+        > input{
             display: inline-block;
             height: 56px;
-            border-radius: 4px;
-            border-style: solid;
-            color: $text-light;
-            border-width: 1px;
-            border-color: $text-light;
-            font-size: 10pt;
-            padding-left: 20px; //To better align the text inside the input
-            box-sizing: border-box;
-
             max-width: 308px;
             min-width: 270px;
+
+            font-size: 10pt;
+            
+            border: 1px solid $text-light;
+            border-radius: 4px;
+            color: $text-light;
+
+            margin: 10px;
+            padding-left: 20px; //To better align the text inside the input
+            box-sizing: border-box;
 
             //For medium and small sized screens
             @media (max-width:750px){
@@ -73,16 +75,20 @@
 
         .register{
             display: inline-flex;
-            min-width: 140px;
+            justify-content: center;
+
             height: 56px;
+            min-width: 140px;
+
             margin: 10px;
+            box-sizing: border-box;
+
+            color: white;
             background-color: $main-light;
             border-radius: 4px;
             border-style: none;
-            color: white;
-            justify-content: center;
+
             transition: background-color 250ms;
-            box-sizing: border-box;
 
             //For medium and small sized screens
             @media (max-width:750px){
@@ -101,9 +107,9 @@
          
         }
 
-        h6{
+        > h6{
             margin-top: 20px;
-            color:rgb(91, 94, 109);
+            color:$text-dark;
         }
     }
 
