@@ -3,6 +3,7 @@
 $drawer-speed: 300ms;
 $opacity-speed: 300ms;
 
+//Toggle Button that will be attached to the navbar. 
 .drawer_toggle{
     position: relative;
     background-color: transparent;
@@ -20,19 +21,16 @@ $opacity-speed: 300ms;
     }
 }
 
-
-.drawer_body{    
-    //As long as its on the top.
+//Drawer is initially hidden, but will open when toggled
+.drawer_body{
     z-index: 100;
-    padding:0;
-    margin:0;
     position: fixed;
     top: 0;
     left: 100vw;
     transition: left $drawer-speed, opacity $opacity-speed;
     height: 100vh;
     opacity: 0;
-    background-color: $main-dark;
+    background-color: $main-light;
     background-image: url(./bg.png);
     overflow: hidden;
 
@@ -40,14 +38,13 @@ $opacity-speed: 300ms;
         height: 70px;
         width: 100vw;
         max-width: 100%;
-        border-bottom: 1px solid $text-light;
-        border-width: 1px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         
         .logo_space{
             float: left;
             margin-left: 20px;
             height: 100%;
-            
+
             //Vertically center img
             display: flex;
             align-content: center;
@@ -83,12 +80,43 @@ $opacity-speed: 300ms;
     .links{
         display: flex;
         flex-direction: column;
-        margin: 20px;
-        padding: 20px;
-        
+
         >a{
+            
+            padding: 15px 30px 15px 30px;
             font-size: 1.5em;
             color: white;
+        }
+    }
+
+    .drawer_footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+
+        >a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-size: 1.2em;
+
+            color: white;
+            width: 100vw;
+            height: 40px;
+
+            @media(min-width: 500px){
+                width: 90vw;
+            }
+
+
+        }
+
+        //Style the second link (Download Now)
+        :nth-child(2){
+            color: $main-light;
+            background-color: white;
         }
     }
 }

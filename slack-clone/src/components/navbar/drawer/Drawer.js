@@ -50,11 +50,13 @@ class Drawer extends Component{
                     <a href=""> Why Slack? </a>
                     <a href=""> Pricing </a>
                     <a href=""> About Us </a>
-                    <a href=""> Download Slack </a>
                 </div>
 
-                <a href=""> Find your Workspace </a>
-                <a href=""> Create Workspace </a>
+
+                <div className={style.drawer_footer}>
+                    <a href=""> <strong> Create Workspace </strong> </a>
+                    <a href=""> <strong> Download Slack </strong> </a>
+                </div>
 
             </div>
         </div>

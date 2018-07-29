@@ -91,7 +91,11 @@
 
         //Hide if large size screen
         @media(min-width: 751px){
-            display: none;
+            /*We choose not to use display:none because this will cause the entire drawer
+            to collapse when the user resizes the window. This fix allows
+            the drawer to stay open*/
+            visibility: hidden;
+            pointer-events: none
         }
     }
 }
