@@ -9,7 +9,7 @@ const Landing = function(props){
         <div className={style.body}>
             <h1> Where Work Happens</h1>
             <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-            <input type="text" placeholder="Email Address"/>
+            {/* <input type="text" placeholder="Email Address"/> */}
             <button  className={style.register}> <strong> GET STARTED </strong> </button>
             <h6> 
                 Already using Slack? 

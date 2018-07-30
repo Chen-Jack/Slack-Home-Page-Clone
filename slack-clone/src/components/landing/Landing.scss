@@ -32,13 +32,13 @@
     }
 
     .body{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
         box-sizing: border-box;
         width: 100%;
 
         > h1{
-            font-size: calc(3vw + 2vh + 2vmin);
+            font-size: calc(4vw + 3vh + 2vmin); /*idk i copied this part online. Auto sizing font */
             font-family: "Times New Roman", Georgia, serif;
             margin-bottom: 30px;
             color:rgb(50, 54, 72);
@@ -75,13 +75,10 @@
         }
 
         .register{
-            display: inline-flex;
-            justify-content: center;
 
             height: 56px;
             min-width: 140px;
-
-            margin: 10px;
+;
             box-sizing: border-box;
 
             color: white;
@@ -93,8 +90,8 @@
 
             //For medium and small sized screens
             @media (max-width:750px){
-                max-width: 80%;
-                min-width: 80%;
+                max-width: 100%;
+                min-width: 100%;
             }
 
 
