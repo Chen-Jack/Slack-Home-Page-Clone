@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <MetaTag>
           <title> Where work happens | Slack </title>
-          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+          <meta property="viewport" content="width=device-width, initial-scale=1"/>
         </MetaTag>
         <NavBar/>
         <Notification/>
