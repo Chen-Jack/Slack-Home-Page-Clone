@@ -2,8 +2,8 @@
 
 .directory{
     display: inline-grid;
-    justify-content: flex-end;
-    max-width: max-content;
+    justify-content: center;
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
     //For medium and small sized screens
@@ -14,7 +14,6 @@
 
 .column{
     display: inline-block;
-    margin: 20px;
     padding: 5px;
     box-sizing: border-box;
 

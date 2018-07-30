@@ -11,19 +11,19 @@
 
     border-bottom: 1px solid rgb(235, 235, 235);
     
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    // grid-template-columns: 1fr 1fr;
 
     //For medium and small sized screens
     @media(max-width:750px){
 
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        flex-direction: column;
 
         .img{
-            grid-row: 2;
+            order: 2;
         }
         .body{
-            grid-row: 1;
+            order: 1;
         }
     }
 
@@ -35,18 +35,19 @@
         padding-left: 50px;
         padding-right: 50px;
         box-sizing: border-box;
+        width: 100%;
 
         > h1{
+            font-size: calc(3vw + 2vh + 2vmin);
             font-family: "Times New Roman", Georgia, serif;
             margin-bottom: 30px;
-            font-size: 5em;
             color:rgb(50, 54, 72);
         }
 
         > p{
             font-family: "Times New Roman", Georgia, serif;
             margin-bottom: 30px;
-            font-size: 1.3em;
+            font-size: 1.2em;
             color: $text-light;
         }
 

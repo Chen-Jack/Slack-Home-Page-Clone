@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import style from './CompanyInfo.scss';
 import airbnb_logo from './airbnb.png';
 import capitalone_logo from'./capital_one.png';
